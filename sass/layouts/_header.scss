@@ -1,0 +1,165 @@
+.header {
+    padding: calc(1px + .5vw) calc(8px + 1vw);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: height 0.5s ease-in-out;
+    margin: 10px 0;
+    box-sizing: border-box;
+
+    &__cont {
+        border-radius: 10px;
+        padding: calc(2px + 1vw) calc(5px + 2vw);
+        background-color: $header-background;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 6vw; /* 15% of the viewport width */
+        min-width: 3rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__logo--name {
+        color: white;
+        margin-left: 20px;
+
+        .name--cont {
+            font-size: responsive-font-size(3.2);
+            font-weight: 600;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        margin-left: auto;
+        transition: height 0.5s ease-in-out;
+        height: auto;
+        // overflow: hidden; /* Prevent overflow */
+        
+        &--list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: auto;
+        }
+        
+        &--item {
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        &--link {
+            display: inline-block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    &__menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
+
+/* Media Query for viewports smaller than 768px */
+@media (max-width: 768px) {
+    .header {
+        &__cont {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            transition: height .3s ease;
+
+            &--mobile {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &__nav {
+            // display: none; /* Initially hidden */
+            // display: block;
+            height: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            overflow: hidden; /* Prevent overflow */
+            transition: height 0.5s ease-in-out;
+
+            &--list{
+                width: 100%;
+            }
+
+            &--item{
+                width: 100%;
+                display: block;
+                margin-left: 0px;
+                margin-top: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            &--link{
+                display: block;
+                padding: 8px 16px;
+
+                &:active, &:hover{
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+
+        .show {
+            height: 12rem; /* Allow height to adjust */
+            transition: all .3s ease;
+            // animation: slide-down 2s ease;
+        }
+
+        &__nav--list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__menu-btn {
+            display: block; /* Show menu button */
+        }
+
+        // .expanded {
+        //     height: auto;
+
+        //     .header__nav {
+        //         display: block;
+        //         height: auto;
+        //     }
+        // }
+    }
+}
