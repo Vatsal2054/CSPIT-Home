@@ -6,10 +6,27 @@
     box-sizing: border-box;
 }
 
+html {
+    // width: 100vw;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     color: #333;
     background-color: #f4f4f4;
     overflow-x: hidden;
+}
+
+body {
+    &::-webkit-scrollbar {
+        width: 10px;
+        position: fixed;
+        z-index: 2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333;
+        // border-radius: 10px;
+    }
 }

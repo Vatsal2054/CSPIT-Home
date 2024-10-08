@@ -12,14 +12,39 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #f4f4f4;
   overflow-x: hidden; }
 
-.slideshow-container {
+body::-webkit-scrollbar {
+  width: 10px;
+  position: fixed;
+  z-index: 2; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333; }
+
+.u-blk {
+  display: block; }
+
+.u-il-blk {
+  display: inline-block; }
+
+.u-font-bold {
+  font-weight: 700; }
+
+.u-font-light {
+  font-weight: 200; }
+
+.slideshow-box {
   position: relative;
+  width: 100vw;
+  height: 100vh; }
+
+.slideshow-container {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
@@ -35,26 +60,124 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.6s ease-in-out; }
+  transition: opacity 1.4s ease-in-out; }
 
 .slide.active {
   opacity: 1; }
 
+.info-box {
+  display: block;
+  margin: 40px;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 45vw;
+  height: fit-content;
+  background-color: #ffffffbb;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  transition: height 0.3s; }
+  @media (max-width: 768px) {
+    .info-box {
+      width: 70vw;
+      height: fit-content; } }
+  .info-box__header {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem; }
+    .info-box__header span {
+      font-size: clamp(1.66667rem, 1.5vw + 1.2rem, 4.5rem);
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      letter-spacing: -1.5px; }
+  .info-box .details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .info-box .details-list .details-list-item {
+      font-size: clamp(1.11111rem, 1vw + 0.8rem, 3rem);
+      font-weight: 300;
+      max-width: 90%;
+      color: #ff781e;
+      opacity: 0;
+      /* Initially fully transparent */
+      visibility: hidden;
+      /* Hide from screen */
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease, visibility 0.8s;
+      position: absolute;
+      /* Ensure only one item is in view */ }
+      .info-box .details-list .details-list-item.visible {
+        opacity: 1;
+        /* Fully visible */
+        visibility: visible;
+        /* Visible on the screen */
+        transform: translateY(0);
+        position: relative;
+        /* In layout when visible */ }
+
+.section-intro {
+  padding: 8% 8%;
+  width: 100vw;
+  background-image: url("../../resources/cspit/slideshow (1).webp");
+  background-size: cover; }
+  .section-intro__cont {
+    width: 60%;
+    padding: 3rem;
+    background-color: #ffffffa7;
+    border-radius: 40px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    font-weight: 300;
+    font-size: clamp(0.61111rem, 0.55vw + 0.44rem, 1.65rem); }
+    @media (max-width: 768px) {
+      .section-intro__cont {
+        padding: 1rem;
+        border-radius: 10px; } }
+    .section-intro__cont h1 {
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: -1.5px;
+      font-weight: 400;
+      font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem); }
+    .section-intro__cont .highlight {
+      font-weight: 500;
+      background-image: linear-gradient(120deg, #4287fe, #ff7a1c);
+      background-clip: text;
+      color: transparent; }
+    .section-intro__cont .intro-module {
+      margin-bottom: 1rem; }
+      .section-intro__cont .intro-module h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: clamp(1.11111rem, 1vw + 0.8rem, 3rem);
+        font-weight: 400;
+        letter-spacing: -1.5px;
+        margin-bottom: 1rem; }
+
+.scrolled {
+  padding: 0 0 !important;
+  margin: 0 0 !important; }
+  .scrolled .header__cont {
+    border-radius: 0 !important; }
+
 .header {
-  padding: calc(1px + .5vw) calc(8px + 1vw);
+  padding: calc(1px + 1vw) calc(8px + 2vw);
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
-  transition: height 0.5s ease-in-out;
+  z-index: 10;
+  transition: all 0.5s ease;
   margin: 10px 0;
   box-sizing: border-box; }
   .header__cont {
     border-radius: 10px;
-    padding: calc(2px + 1vw) calc(5px + 2vw);
-    background-color: #33333375;
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    padding: calc(2px + .5vw) calc(5px + 1vw);
+    background-color: #ffffffa7;
+    color: #333;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,16 +186,15 @@ body {
     display: flex;
     align-items: center; }
   .header__logo {
-    width: 6vw;
+    width: 5vw;
     /* 15% of the viewport width */
     min-width: 3rem; }
     .header__logo img {
       width: 100%; }
   .header__logo--name {
-    color: white;
-    margin-left: 20px; }
+    margin-left: calc(5px + 1vw); }
     .header__logo--name .name--cont {
-      font-size: clamp(1.77778rem, 1.6vw + 1.28rem, 4.8rem);
+      font-size: clamp(1.66667rem, 1.5vw + 1.2rem, 4.5rem);
       font-weight: 600; }
   .header__nav {
     display: flex;
@@ -92,11 +214,15 @@ body {
       overflow: hidden; }
     .header__nav--link {
       display: inline-block;
-      color: white;
-      padding: 8px 16px;
+      padding: 10px 20px;
       text-decoration: none; }
+      .header__nav--link, .header__nav--link:visited, .header__nav--link:link {
+        color: #333;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px; }
       .header__nav--link:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
+        background-color: rgba(66, 135, 254, 0.4); }
   .header__menu-btn {
     display: none;
     background: none;
@@ -137,8 +263,6 @@ body {
     .header__nav--link {
       display: block;
       padding: 8px 16px; }
-      .header__nav--link:active, .header__nav--link:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
   .header .show {
     height: 12rem;
     /* Allow height to adjust */

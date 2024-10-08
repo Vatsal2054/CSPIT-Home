@@ -6,3 +6,50 @@
         height: 100%;
     }
 }
+
+// .expand-header {
+//     width: 100%;
+// }
+
+// @keyframes expand {
+//     from {
+//         width: 90%;
+//     }
+// }
+
+// .heading-underline {
+//     -webkit-animation: scale-a-lil linear both;
+//     animation: scale-a-lil linear both;
+//     animation-timeline: view();
+//     animation-range: 5vh 70vh;
+// }
+
+// .moving-image {
+//     -webkit-animation: move-up linear both;
+//     animation: move-up linear both;
+//     animation-timeline: view();
+//     animation-range: 0vh 60vh;
+// }
+// .move-in-left {
+//     -webkit-animation: move-left linear both;
+//     animation: move-left linear both;
+//     animation-timeline: view();
+//     animation-range: 10vh 70vh;
+// }
+// .move-in-right {
+//     -webkit-animation: move-right linear both;
+//     animation: move-right linear both;
+//     animation-timeline: view();
+//     animation-range: 0vh 50vh;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//     .expand-header {
+//         -webkit-animation: expand linear both;
+//         animation: expand linear both;
+//         // -webkit-animation-timeline: view();
+//         animation-timeline: view();
+//         // -webkit-animation-range: 60vh 75vh;
+//         animation-range: 40vh 75vh;
+//     }
+// }

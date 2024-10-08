@@ -29,3 +29,38 @@ document.addEventListener('DOMContentLoaded', () => {
         // }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const listItems = document.querySelectorAll('.details-list-item');
+    let currentIndex = 0;
+
+    function showNextItem() {
+        // Hide all items
+        listItems.forEach(item => {
+            item.classList.remove('visible');
+        });
+
+        // Show the current item
+        listItems[currentIndex].classList.add('visible');
+
+        // Move to the next item
+        currentIndex = (currentIndex + 1) % listItems.length;
+
+        // Set the interval for the next item
+        setTimeout(showNextItem, 4000); // Adjust timing as needed
+    }
+
+    // Start the animation
+    showNextItem();
+});
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    const scrollHeight = window.scrollY;
+
+    if (scrollHeight > window.innerHeight * 0.5) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});

@@ -1,19 +1,31 @@
+.scrolled{
+    padding: 0 0 !important;
+    margin: 0 0 !important;
+
+    .header__cont{
+        border-radius: 0 !important;
+    }
+}
+
 .header {
-    padding: calc(1px + .5vw) calc(8px + 1vw);
+    padding: calc(1px + 1vw) calc(8px + 2vw);
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
-    transition: height 0.5s ease-in-out;
+    z-index: 10;
+    transition: all 0.5s ease;
     margin: 10px 0;
     box-sizing: border-box;
 
     &__cont {
         border-radius: 10px;
-        padding: calc(2px + 1vw) calc(5px + 2vw);
+        padding: calc(2px + .5vw) calc(5px + 1vw);
         background-color: $header-background;
-        -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(30px);
+        color: $color-text-black;
+        // background: linear-gradient(120deg, rgba(63, 107, 254, 0.4), rgba(255, 134, 35, 0.4));
+        // background-color: #ffffffbb;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -26,7 +38,7 @@
     }
 
     &__logo {
-        width: 6vw; /* 15% of the viewport width */
+        width: 5vw; /* 15% of the viewport width */
         min-width: 3rem;
 
         img {
@@ -35,11 +47,10 @@
     }
 
     &__logo--name {
-        color: white;
-        margin-left: 20px;
+        margin-left: calc(5px + 1vw);
 
         .name--cont {
-            font-size: responsive-font-size(3.2);
+            font-size: responsive-font-size(3);
             font-weight: 600;
         }
     }
@@ -67,13 +78,22 @@
         }
 
         &--link {
+            &,
+            &:visited,
+            &:link {
+                color: $color-text-black;
+                // font-weight: 700;
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+            }
+
             display: inline-block;
-            color: white;
-            padding: 8px 16px;
+            padding: 10px 20px;
             text-decoration: none;
 
             &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba($color-theme-primary, 0.4);
             }
         }
     }
@@ -132,9 +152,9 @@
                 display: block;
                 padding: 8px 16px;
 
-                &:active, &:hover{
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
+                // &:active, &:hover{
+                    // background-color: rgba(255, 255, 255, 0.1);
+                // }
             }
         }
 
