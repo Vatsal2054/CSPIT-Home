@@ -1,7 +1,7 @@
 .section-intro{
     padding: 8% 8%;
     width: 100vw;
-    background-image: url("../../resources/cspit/slideshow\ \(1\).webp");
+    background-image: url("../../resources/cspit/slideshow-1.webp");
     background-size: cover;
     // height: 100vh;
     // color: $color-text-white;
@@ -17,29 +17,24 @@
         font-size: responsive-font-size(1.1);
         // border: 1px solid #ffffffdc;
 
-        @media (max-width: 768px) {
-            // width: 90%;
-            padding: 1rem;
-            border-radius: 10px;
-        }
-
+        
         h1{
             font-family: 'Times New Roman', Times, serif;
             letter-spacing: -1.5px;
             font-weight: 400;
             font-size: responsive-font-size(2.4); 
         }
-
+        
         .highlight{
             font-weight: 500;
             background-image: linear-gradient(120deg, $color-theme-primary, $color-theme-secondary);
             background-clip: text;
             color: transparent;
         }
-
+        
         .intro-module{
             margin-bottom: 1rem;
-
+            
             h2{
                 font-family: 'Times New Roman', Times, serif;
                 font-size: responsive-font-size(2);
@@ -47,6 +42,18 @@
                 letter-spacing: -1.5px;
                 margin-bottom: 1rem;
             }
+        }
+    }
+}
+@media (max-width: 768px) {
+
+    .section-intro{
+        padding: 8% 4%;
+
+        &__cont{
+            width: 65%;
+            padding: 1rem;
+            border-radius: 10px;
         }
     }
 }

@@ -52,6 +52,7 @@
     transition: height 0.3s;
 
     @media (max-width: 768px) {
+        margin: 40px 20px;
         width: 70vw;
         height: fit-content;
     }
