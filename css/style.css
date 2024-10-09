@@ -26,6 +26,15 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #333; }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* You can do the same for links */
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 .u-blk {
   display: block; }
 
@@ -90,7 +99,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 200;
     margin-bottom: 1rem; }
     .info-box__header span {
-      font-size: clamp(1.66667rem, 1.5vw + 1.2rem, 4.5rem);
+      font-size: clamp(1.875rem, 1.5vw + 1.2rem, 4.5rem);
       font-weight: 600;
       letter-spacing: -2px; }
   .info-box .details-list {
@@ -98,7 +107,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     margin: 0; }
     .info-box .details-list .details-list-item {
-      font-size: clamp(1.11111rem, 1vw + 0.8rem, 3rem);
+      font-size: clamp(1.25rem, 1vw + 0.8rem, 3rem);
       font-weight: 500;
       max-width: 90%;
       letter-spacing: -1px;
@@ -133,11 +142,11 @@ body::-webkit-scrollbar-thumb {
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     font-weight: 300;
-    font-size: clamp(0.77778rem, 0.7vw + 0.56rem, 2.1rem); }
+    font-size: clamp(0.875rem, 0.7vw + 0.56rem, 2.1rem); }
     .section-intro__cont h1 {
       font-weight: 600;
       letter-spacing: -1.5px;
-      font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem); }
+      font-size: clamp(1.5rem, 1.2vw + 0.96rem, 3.6rem); }
     .section-intro__cont .highlight {
       font-weight: 600;
       letter-spacing: -1.5px;
@@ -148,7 +157,7 @@ body::-webkit-scrollbar-thumb {
       margin-bottom: 1.5rem; }
       .section-intro__cont .intro-module h2 {
         font-weight: 600;
-        font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem);
+        font-size: clamp(1.5rem, 1.2vw + 0.96rem, 3.6rem);
         letter-spacing: -1.5px;
         margin-bottom: .6rem; }
 
@@ -156,7 +165,7 @@ body::-webkit-scrollbar-thumb {
   .section-intro {
     padding: 8% 4%; }
     .section-intro__cont {
-      width: 65%;
+      width: 75%;
       padding: 1rem;
       border-radius: 10px; } }
 
@@ -167,7 +176,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%; }
     .programs__cont--header {
       width: 100%;
-      font-size: clamp(1.55556rem, 1.4vw + 1.12rem, 4.2rem);
+      font-size: clamp(1.75rem, 1.4vw + 1.12rem, 4.2rem);
       font-weight: 900;
       letter-spacing: -2px;
       display: flex;
@@ -194,8 +203,10 @@ body::-webkit-scrollbar-thumb {
 .program__category .category-name {
   font-size: 2rem;
   letter-spacing: -1.5px;
-  font-weight: 500;
-  padding: 1rem 0; }
+  font-weight: 600;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 2px solid #ddd; }
 
 .program__list {
   display: flex;
@@ -216,27 +227,27 @@ body::-webkit-scrollbar-thumb {
   .program__item:hover {
     box-shadow: 0 0 20px rgba(51, 51, 51, 0.3); }
   .program__item:nth-child(1) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-1.png"); }
+    background-image: url(".././resources/backgrounds/mesh-1.webp"); }
   .program__item:nth-child(2) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-2.png"); }
+    background-image: url(".././resources/backgrounds/mesh-2.webp"); }
   .program__item:nth-child(3) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-3.png"); }
+    background-image: url(".././resources/backgrounds/mesh-3.webp"); }
   .program__item:nth-child(4) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-4.png"); }
+    background-image: url(".././resources/backgrounds/mesh-4.webp"); }
   .program__item:nth-child(5) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-5.png"); }
+    background-image: url(".././resources/backgrounds/mesh-5.webp"); }
   .program__item:nth-child(6) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-6.png"); }
+    background-image: url(".././resources/backgrounds/mesh-6.webp"); }
   .program__item:nth-child(7) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-7.png"); }
+    background-image: url(".././resources/backgrounds/mesh-7.webp"); }
   .program__item:nth-child(8) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-8.png"); }
+    background-image: url(".././resources/backgrounds/mesh-8.webp"); }
   .program__item:nth-child(9) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-9.png"); }
+    background-image: url(".././resources/backgrounds/mesh-9.webp"); }
   .program__item:nth-child(8) .program__name {
-    background-image: url(".././resources/backgrounds/mesh-8.png"); }
+    background-image: url(".././resources/backgrounds/mesh-8.webp"); }
   .program__item .font-small {
-    font-size: clamp(1rem, 0.9vw + 0.72rem, 2.7rem); }
+    font-size: clamp(1.125rem, 0.9vw + 0.72rem, 2.7rem); }
   @media (max-width: 768px) {
     .program__item {
       flex: 0 1 calc(50% - 2rem);
@@ -253,7 +264,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   border-bottom: 1px solid #ddd;
   font-weight: 600;
-  font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem);
+  font-size: clamp(1.5rem, 1.2vw + 0.96rem, 3.6rem);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -349,7 +360,7 @@ body::-webkit-scrollbar-thumb {
   .header__logo--name {
     margin-left: calc(5px + 1vw); }
     .header__logo--name .name--cont {
-      font-size: clamp(1.66667rem, 1.5vw + 1.2rem, 4.5rem);
+      font-size: clamp(1.875rem, 1.5vw + 1.2rem, 4.5rem);
       font-weight: 600;
       letter-spacing: -2px;
       color: #0150d9; }
@@ -375,6 +386,9 @@ body::-webkit-scrollbar-thumb {
       text-decoration: none; }
       .header__nav--link, .header__nav--link:visited, .header__nav--link:link {
         color: #333;
+        font-weight: 600;
+        font-size: 1.2rem;
+        letter-spacing: -1px;
         text-decoration: none;
         display: inline-block;
         padding: 8px 16px; }
@@ -423,7 +437,7 @@ body::-webkit-scrollbar-thumb {
       width: 100%;
       padding: 8px 16px; }
   .header .show {
-    height: 12rem;
+    height: 12.5rem;
     /* Allow height to adjust */
     transition: all .3s ease; }
   .header__nav--list {

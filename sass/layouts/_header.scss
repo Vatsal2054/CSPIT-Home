@@ -86,7 +86,9 @@
             &:visited,
             &:link {
                 color: $color-text-black;
-                // font-weight: 700;
+                font-weight: 600;
+                font-size: 1.2rem;
+                letter-spacing: -1px;
                 text-decoration: none;
                 display: inline-block;
                 padding: 8px 16px;
@@ -165,7 +167,7 @@
         }
 
         .show {
-            height: 12rem; /* Allow height to adjust */
+            height: 12.5rem; /* Allow height to adjust */
             transition: all .3s ease;
             // animation: slide-down 2s ease;
         }

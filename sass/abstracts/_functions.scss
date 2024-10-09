@@ -1,5 +1,5 @@
 @function responsive-font-size($font-size) {
-    $smallest: ($font-size / 1.8);
+    $smallest: ($font-size / 1.6);
     @debug ($font-size / 1.5);
     $largest: $font-size * 1.5;
     $viewport-width: 100vw;
