@@ -8,7 +8,7 @@
 }
 
 .header {
-    padding: calc(1px + 1vw) calc(8px + 2vw);
+    padding: calc(2px + 1vw) calc(8px + 2vw);
     position: fixed;
     top: 0;
     width: 100%;
@@ -38,6 +38,8 @@
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
         width: 5vw; /* 15% of the viewport width */
         min-width: 3rem;
 
@@ -92,7 +94,7 @@
             padding: 10px 20px;
             text-decoration: none;
 
-            &:hover {
+            &:hover, &:active, &:focus {
                 background-color: rgba($color-theme-primary, 0.4);
             }
         }
@@ -117,6 +119,7 @@
             align-items: center;
             height: auto;
             transition: height .3s ease;
+            padding: 10px 20px;
 
             &--mobile {
                 display: flex;
@@ -150,6 +153,7 @@
 
             &--link{
                 display: block;
+                width: 100%;
                 padding: 8px 16px;
 
                 // &:active, &:hover{
@@ -171,6 +175,10 @@
 
         &__menu-btn {
             display: block; /* Show menu button */
+            display: flex;
+            align-items: center;
+            margin: 0 0 4px 0;
+            color: $color-text-black;
         }
 
         // .expanded {
