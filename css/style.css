@@ -99,8 +99,9 @@ body::-webkit-scrollbar-thumb {
     margin: 0; }
     .info-box .details-list .details-list-item {
       font-size: clamp(1.11111rem, 1vw + 0.8rem, 3rem);
-      font-weight: 300;
+      font-weight: 500;
       max-width: 90%;
+      letter-spacing: -1px;
       color: #ff781e;
       opacity: 0;
       /* Initially fully transparent */
@@ -132,7 +133,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     font-weight: 300;
-    font-size: clamp(0.61111rem, 0.55vw + 0.44rem, 1.65rem); }
+    font-size: clamp(0.77778rem, 0.7vw + 0.56rem, 2.1rem); }
     .section-intro__cont h1 {
       font-weight: 600;
       letter-spacing: -1.5px;
@@ -144,10 +145,10 @@ body::-webkit-scrollbar-thumb {
       background-clip: text;
       color: transparent; }
     .section-intro__cont .intro-module {
-      margin-bottom: 1rem; }
+      margin-bottom: 1.5rem; }
       .section-intro__cont .intro-module h2 {
         font-weight: 600;
-        font-size: clamp(1.11111rem, 1vw + 0.8rem, 3rem);
+        font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem);
         letter-spacing: -1.5px;
         margin-bottom: .6rem; }
 
@@ -210,7 +211,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   letter-spacing: -1px;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all .3s; }
+  .program__item:hover {
+    box-shadow: 0 0 20px rgba(51, 51, 51, 0.3); }
   .program__item:nth-child(1) .program__name {
     background-image: url(".././resources/backgrounds/mesh-1.png"); }
   .program__item:nth-child(2) .program__name {
@@ -249,7 +253,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   border-bottom: 1px solid #ddd;
   font-weight: 600;
-  font-size: clamp(1.22222rem, 1.1vw + 0.88rem, 3.3rem);
+  font-size: clamp(1.33333rem, 1.2vw + 0.96rem, 3.6rem);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -346,7 +350,9 @@ body::-webkit-scrollbar-thumb {
     margin-left: calc(5px + 1vw); }
     .header__logo--name .name--cont {
       font-size: clamp(1.66667rem, 1.5vw + 1.2rem, 4.5rem);
-      font-weight: 600; }
+      font-weight: 600;
+      letter-spacing: -2px;
+      color: #0150d9; }
   .header__nav {
     display: flex;
     margin-left: auto;

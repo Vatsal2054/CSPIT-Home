@@ -78,8 +78,9 @@
 
         .details-list-item {
             font-size: responsive-font-size(2);
-            font-weight: 300;
+            font-weight: 500;
             max-width: 90%;
+            letter-spacing: -1px;
             color: #ff781e;
             opacity: 0; /* Initially fully transparent */
             visibility: hidden; /* Hide from screen */
