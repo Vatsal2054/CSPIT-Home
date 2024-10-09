@@ -52,9 +52,10 @@
     transition: height 0.3s;
 
     @media (max-width: 768px) {
-        margin: 40px 20px;
-        width: 70vw;
-        height: fit-content;
+        margin: 40px 5vw;
+        padding: 20px;
+        width: 90vw;
+        height: 12rem;
     }
 
     &__header {
@@ -81,12 +82,12 @@
             font-weight: 500;
             max-width: 90%;
             letter-spacing: -1px;
-            color: #ff781e;
+            color: #f98335;
             opacity: 0; /* Initially fully transparent */
             visibility: hidden; /* Hide from screen */
             transform: translateY(20px);
             transition:
-                opacity 0.8s ease,
+                opacity 0.4s ease,
                 transform 0.8s ease,
                 visibility 0.8s;
             position: absolute; /* Ensure only one item is in view */

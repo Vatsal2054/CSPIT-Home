@@ -91,9 +91,10 @@ a {
   transition: height 0.3s; }
   @media (max-width: 768px) {
     .info-box {
-      margin: 40px 20px;
-      width: 70vw;
-      height: fit-content; } }
+      margin: 40px 5vw;
+      padding: 20px;
+      width: 90vw;
+      height: 12rem; } }
   .info-box__header {
     font-size: 1.5rem;
     font-weight: 200;
@@ -111,13 +112,13 @@ a {
       font-weight: 500;
       max-width: 90%;
       letter-spacing: -1px;
-      color: #ff781e;
+      color: #f98335;
       opacity: 0;
       /* Initially fully transparent */
       visibility: hidden;
       /* Hide from screen */
       transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease, visibility 0.8s;
+      transition: opacity 0.4s ease, transform 0.8s ease, visibility 0.8s;
       position: absolute;
       /* Ensure only one item is in view */ }
       .info-box .details-list .details-list-item.visible {
@@ -163,9 +164,10 @@ a {
 
 @media (max-width: 768px) {
   .section-intro {
-    padding: 8% 4%; }
+    padding: 8% 4%;
+    background-position: 50%; }
     .section-intro__cont {
-      width: 75%;
+      width: 80%;
       padding: 1rem;
       border-radius: 10px; } }
 
@@ -177,7 +179,7 @@ a {
     .programs__cont--header {
       width: 100%;
       font-size: clamp(1.75rem, 1.4vw + 1.12rem, 4.2rem);
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: -2px;
       display: flex;
       justify-content: flex-start;
@@ -362,8 +364,7 @@ a {
     .header__logo--name .name--cont {
       font-size: clamp(1.875rem, 1.5vw + 1.2rem, 4.5rem);
       font-weight: 600;
-      letter-spacing: -2px;
-      color: #0150d9; }
+      letter-spacing: -2px; }
   .header__nav {
     display: flex;
     margin-left: auto;
