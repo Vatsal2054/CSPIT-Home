@@ -372,7 +372,7 @@ a {
 
 .info-box {
   display: block;
-  margin: 40px;
+  margin: 0 0 70px 40px;
   padding: 30px;
   position: absolute;
   bottom: 0;
