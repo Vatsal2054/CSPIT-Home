@@ -42,7 +42,7 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    width: 45vw;
+    width: 40vw;
     height: fit-content;
     // background: linear-gradient(120deg, rgba(63, 107, 254, 0.4), rgba(255, 134, 35, 0.4));
     background-color: #ffffffbb;
@@ -80,19 +80,21 @@
         .details-list-item {
             font-size: responsive-font-size(2);
             font-weight: 500;
-            max-width: 90%;
+            max-width: 100%;
+            // width: 90%;
             letter-spacing: -1px;
             color: #f98335;
             opacity: 0; /* Initially fully transparent */
             visibility: hidden; /* Hide from screen */
             transform: translateY(20px);
             transition:
-                opacity 0.4s ease,
-                transform 0.8s ease,
-                visibility 0.8s;
+            opacity 0.4s ease,
+            transform 0.8s ease,
+            visibility 0.8s;
             position: absolute; /* Ensure only one item is in view */
-
+            
             &.visible {
+                max-width: 100%;
                 opacity: 1; /* Fully visible */
                 visibility: visible; /* Visible on the screen */
                 transform: translateY(0);

@@ -1,0 +1,94 @@
+.university-footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+    }
+
+    &__logo {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+        margin-bottom: 0.5rem;
+    }
+
+    &__address {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    &__links {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 400;
+        letter-spacing: -.5px;
+        margin-bottom: 0.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+
+    .separator{
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, $color-theme-primary, $color-theme-secondary);
+    }
+
+    &__bottom {
+        // margin-top: 2rem;
+        padding-top: 1rem;
+        // border-top: 1px solid #dee2e6;
+    }
+
+    &__copyright {
+        font-size: 0.75rem;
+        color: #6c757d;
+    }
+}

@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
+		<script src="https://kit.fontawesome.com/a046844503.js"
+			crossorigin="anonymous"></script>
 		<header class="header">
 			<div class="header__cont expand-header">
 				<div class="header__cont--mobile">
@@ -33,8 +35,30 @@
 								class="header__nav--link">Home</a></li>
 						<li class="header__nav--item"><a href="#"
 								class="header__nav--link">About</a></li>
-						<li class="header__nav--item"><a href="#"
-								class="header__nav--link">Courses</a></li>
+						<li class="header__nav--item header__nav--dropdown">
+							<div class="header__nav--link">Courses</div>
+							<ul class="header__dropdown">
+								<li class="header__nav--item"><a href="#undergraduate"
+										class="header__nav--link">Undergraduate</a></li>
+								<li class="header__nav--item"><a href="#postgraduate"
+										class="header__nav--link">Postgraduate</a></li>
+								<li class="header__nav--item"><a href="#" class="header__nav--link">B.
+										Tech. with Hons.</a></li>
+							</ul>
+						</li>
+						<li class="header__nav--item header__nav--dropdown">
+							<div class="header__nav--link">Student's Corner</div>
+							<ul class="header__dropdown">
+								<li class="header__nav--item"><a href="#"
+										class="header__nav--link">Syllabus</a></li>
+								<li class="header__nav--item"><a href="#"
+										class="header__nav--link">Pay Fees</a></li>
+								<li class="header__nav--item"><a href="#"
+										class="header__nav--link">University Results</a></li>
+								<li class="header__nav--item"><a href="#" class="header__nav--link">I
+										Create</a></li>
+							</ul>
+						</li>
 						<li class="header__nav--item"><a href="#"
 								class="header__nav--link">Contact</a></li>
 					</ul>
@@ -116,6 +140,76 @@
 			</div>
 		</section>
 
+		<section class="message-section" id="dean_s_message">
+			<div class="message-section__container">
+				<div class="message-section__header">
+					<h2 class="message-section__title">Message from Dean's Desk</h2>
+				</div>
+
+				<div class="message-section__content">
+					<div class="message-section__text">
+						<p class="message-section__paragraph">
+							Welcome to CSPIT, CHARUSAT! As Dean, I'm thrilled to lead our community
+							of scholars, learners, and
+							innovators. Together, let's embrace excellence, diversity, and
+							collaboration. Students, seize every
+							opportunity to grow and make a difference. Faculty, your dedication
+							shapes futures. Staff, your efforts keep
+							our institute thriving. Let's foster an inclusive environment where every
+							voice matters. As we embark on
+							this journey, let's uphold the values of integrity and empathy. I'm
+							excited to witness our collective
+							achievements.
+						</p>
+						<p class="message-section__signature">
+							<strong>Dr. Vijaykumar Chaudhary</strong>
+							<br>
+							<strong>Dean, FTE</strong>
+						</p>
+					</div>
+					<div class="message-section__image">
+						<img
+							src="https://www.charusat.ac.in/assets/images/People/VijayChaudhary.webp"
+							alt="Dr. Vijaykumar Chaudhary" class="message-section__photo">
+					</div>
+				</div>
+
+				<hr class="message-section__divider">
+
+				<div class="message-section__header">
+					<h2 class="message-section__title">Message from Principal's Desk</h2>
+				</div>
+
+				<div class="message-section__content">
+					<div class="message-section__text">
+						<p class="message-section__paragraph">
+							Welcome to CSPIT, where we foster excellence and innovation in
+							engineering education. To our students:
+							Embrace opportunities, challenge yourself, and cultivate a passion for
+							lifelong learning. Faculty: Your
+							dedication molds future leaders; continue to inspire and innovate. Staff:
+							Your commitment ensures our
+							success; thank you for your invaluable contributions. Together, let's
+							uphold integrity, excellence, and
+							inclusivity. As Principal, I'm excited about the journey ahead. Let's
+							collaborate, learn, and grow as we
+							shape the future of engineering together.
+						</p>
+						<p class="message-section__signature">
+							<strong>Dr. Trushit Upadhyaya</strong>
+							<br>
+							<strong>Principal, CSPIT</strong>
+						</p>
+					</div>
+					<div class="message-section__image">
+						<img
+							src="https://www.charusat.ac.in/assets/images/People/Trushit_Sir.webp"
+							alt="Dr. Trushit Upadhyaya" class="message-section__photo">
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="programs">
 			<div class="programs__cont">
 				<div class="programs__cont--header">
@@ -142,7 +236,7 @@
 				</div>
 				<div class="programs__cont--main">
 					<div class="program__category">
-						<div class="category-name">
+						<div class="category-name" id="undergraduate">
 							Undergraduate Programs (B. Tech.)
 						</div>
 						<div class="program__list">
@@ -159,10 +253,12 @@
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												90 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,48,000/-
 											</li>
 										</ul>
@@ -180,14 +276,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												60 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,48,000/-
 											</li>
 										</ul>
@@ -206,14 +305,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												120 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,25,000/-
 											</li>
 										</ul>
@@ -232,14 +334,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												30 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,00,000/-
 											</li>
 										</ul>
@@ -257,14 +362,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												120 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,48,000/-
 											</li>
 										</ul>
@@ -283,14 +391,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												90 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,48,000/-
 											</li>
 										</ul>
@@ -309,14 +420,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												60 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,00,000/-
 											</li>
 										</ul>
@@ -335,14 +449,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												4 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												30 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs. 1,00,000/-
 											</li>
 										</ul>
@@ -353,7 +470,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="category-name">
+						<div class="category-name" id="postgraduate">
 							Postgraduate Programs (M. Tech. , PGDEAMT)
 						</div>
 						<div class="program__list">
@@ -365,14 +482,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												2 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												18 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs 1,00,000/-
 											</li>
 										</ul>
@@ -393,14 +513,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												2 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												18 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs 1,00,000/-
 											</li>
 										</ul>
@@ -421,14 +544,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												2 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												18 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs 1,00,000/-
 											</li>
 										</ul>
@@ -449,14 +575,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												2 Years
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												09 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs 1,00,000/-
 											</li>
 										</ul>
@@ -478,14 +607,17 @@
 									<div class="program__info">
 										<ul>
 											<li>
-												<img src="./resources/icons/duration.svg" class="card-icon" alt="Clock Icon">
+												<img src="./resources/icons/duration.svg" class="card-icon"
+													alt="Clock Icon">
 												1 Year
 											</li>
 											<li>
-												<img src="./resources/icons/intake.svg" class="card-icon-wide" alt="intake">
+												<img src="./resources/icons/intake.svg" class="card-icon-wide"
+													alt="intake">
 												25 Seats</li>
 											<li>
-												<img src="./resources/icons/fees.svg" class="card-icon-wider" alt="fees">
+												<img src="./resources/icons/fees.svg" class="card-icon-wider"
+													alt="fees">
 												Rs 50,000/- per year
 											</li>
 										</ul>
@@ -502,6 +634,143 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="scalars">
+			<section class="achievment-area">
+				<div class="col-sm-12 section-header-box">
+					<div class="section-header">
+						<h1>CSPIT SCALARS</h1>
+					</div><!-- ends: .section-header -->
+				</div>
+				<div class="container">
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa fa-group scalar_item"></i>
+							<div class="project-count counter">12000</div>
+							<span>Alumni</span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa  fa-flask scalar_item"></i>
+							<div class="project-count counter">30</div>
+							<span>Research Laboratories</span>
+						</div>
+					</div>
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa  fa-trophy scalar_item"></i>
+							<div class="project-count counter">80</div>
+							<span>Job Placements (%)</span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa  fa-graduation-cap scalar_item"></i>
+							<div class="project-count counter">3000</div>
+							<span>Higher Studies</span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa fa-black-tie scalar_item"></i>
+							<div class="project-count counter">250</div>
+							<span>ENTREPRENEURS</span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+
+							<i class="fa fa-user scalar_item"></i>
+							<div class="project-count counter">159</div>
+							<span> Faculty Members</span>
+						</div>
+					</div>
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa fa-newspaper-o scalar_item"></i>
+							<div class="project-count counter">750</div>
+							<span>Publications</span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 counters-item">
+						<div class="section counter-box">
+							<i class="fa fa-money scalar_item"></i>
+							<div class="project-count counter">130</div>
+							<span>No. of Grants</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<footer class="university-footer">
+			<div class="university-footer__container">
+				<div class="university-footer__row">
+					<div class="university-footer__brand">
+						<img src="./resources/logo/cspit_logo.png" class="university-footer__logo"
+							alt="CSPIT Logo">
+						<h5 class="university-footer__title">CSPIT</h5>
+						<address class="university-footer__address">
+							<p>Changa, Anand 388421<br>Gujarat, India</p>
+							<p>+91.79.61911000/200/201</p>
+						</address>
+					</div>
+					<div class="university-footer__links">
+						<ul class="university-footer__list">
+							<li><a class="university-footer__link" href="/about-ahmedabad/">About
+									CHARUSAT</a></li>
+							<li><a class="university-footer__link" href="/our-purpose/">Our
+									Purpose</a></li>
+							<li><a class="university-footer__link"
+									href="/university-leadership/">University Leadership</a></li>
+							<li><a class="university-footer__link" href="/board-of-management/">Board
+									of Management</a></li>
+							<li><a class="university-footer__link" href="/board-of-governors/">Board
+									of Governors</a></li>
+							<li><a class="university-footer__link"
+									href="/academics/schools-centres/">Schools & Centres</a></li>
+							<li><a class="university-footer__link"
+									href="/research/">Research</a></li>
+							<li><a class="university-footer__link"
+									href="/academics/programmes/">Programmes</a></li>
+							<li><a class="university-footer__link"
+									href="/admission/">Admission</a></li>
+						</ul>
+					</div>
+					<div class="university-footer__links">
+						<ul class="university-footer__list">
+							<li><a class="university-footer__link" href="/news/">News</a></li>
+							<li><a class="university-footer__link"
+									href="/all-events/">Events</a></li>
+							<li><a class="university-footer__link"
+									href="/resources/">Resources</a></li>
+							<li><a class="university-footer__link" href="/careers/">Careers</a></li>
+							<li><a class="university-footer__link"
+									href="/accreditations-and-compliance/">Accreditations and
+									Compliance</a></li>
+							<li><a class="university-footer__link" href="/iqac/">IQAC</a></li>
+							<li><a class="university-footer__link" href="/campus-visit/">Campus
+									Visit</a></li>
+							<li><a class="university-footer__link" href="/contact/">Contact</a></li>
+							<li><a class="university-footer__link" href="/privacy-policy/">Privacy
+									Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="separator"></div>
+				<div class="university-footer__bottom">
+					<div class="university-footer__copyright">
+						<span>COPYRIGHT CHARUSAT UNIVERSITY 2024</span>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script src="index.js"></script>
 	</body>

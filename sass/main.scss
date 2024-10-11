@@ -7,8 +7,11 @@
 @import "base/base";
 @import "base/utilities";
 
-@import "components/slideshow";
 @import "components/intro";
+@import "components/message";
 @import "components/programs";
+@import "components/scalars";
+@import "components/slideshow";
 
 @import "layouts/header";
+@import "layouts/footer";
