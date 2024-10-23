@@ -76,3 +76,33 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .chapters{
+        &-section{
+            &--head {
+                font-size: 1rem;
+                gap: .5rem;
+                padding: .4rem;
+                margin-bottom: 1rem;
+
+                .svg-cont{
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 0;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+
+        &__cont{
+            gap: 1.5rem;
+            // justify-content: space-around;
+
+            &--item{
+                width: 25%;
+                padding: .5rem;
+            }
+        }
+    }
+}

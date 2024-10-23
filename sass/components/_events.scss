@@ -25,11 +25,6 @@
                 background-color: rgba($color-theme-secondary, 0.1);
                 box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405);
 
-                @media (max-width: 768px) {
-                    width: 4rem;
-                    height: 4rem;
-                }
-
                 svg {
                     margin: -1px 0 0 0;
                 }
@@ -115,6 +110,42 @@
 
         &:hover{
             background-color: $color-theme-secondary-dark;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .events{
+        &-section{
+            padding: 5%;
+
+            &--head {
+                font-size: 1rem;
+                gap: .5rem;
+                padding: .5rem .8rem;
+                margin-bottom: 1rem;
+
+                .svg-cont{
+                    width: 3rem;
+                    height: 3rem;
+                    margin: 0 .4rem 0 -.5rem;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+
+        &-cards-container{
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .event-card{
+                width: 90%;
+            }
+        }
+
+        &-more-btn{
+            width: 100%;
         }
     }
 }

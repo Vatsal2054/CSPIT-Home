@@ -20,7 +20,7 @@
             align-items: center;
             gap: 1rem;
             margin-bottom: 4rem;
-            padding: 1rem;
+            padding: 1%;
             border-radius: 4rem;
             background-color: $header-background;
 
@@ -72,6 +72,35 @@
                 width: 100%;
                 // height: 100%;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .courses{
+        &-section{
+            &--head {
+                font-size: 1rem;
+                gap: .5rem;
+                padding: .5rem .8rem;
+
+                .svg-cont{
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 0;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+
+        &__cont{
+            gap: 1rem;
+            // justify-content: space-around;
+
+            &--item{
+                width: 25%;
+                padding: .5rem;
             }
         }
     }

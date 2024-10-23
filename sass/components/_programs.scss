@@ -7,7 +7,7 @@
 
         &--header {
             width: 100%;
-            font-size: responsive-font-size(2.5); // Reduced font size
+            font-size: responsive-font-size(2.4); // Reduced font size
             font-weight: 700;
             letter-spacing: -2px; // Reduced letter-spacing
             display: flex;
@@ -50,6 +50,10 @@
             padding: 0.5rem 0; // Reduced padding
             width: 100%;
             border-bottom: 2px solid #ddd;
+
+            @media (max-width: 768px) {
+                font-size: 1.4rem; // Further reduced font size
+            }
         }
     }
 
@@ -186,3 +190,32 @@
         font-size: responsive-font-size(1.8); // Further reduced font size
     }
 }
+
+// @media (max-width: 768px) {
+//     .programs{
+//         &&__cont{
+//             &--header {
+//                 font-size: 1rem;
+//                 gap: .5rem;
+//                 padding: .5rem .8rem;
+
+//                 .svg-cont{
+//                     width: 3rem;
+//                     height: 3rem;
+//                     margin-right: 0;
+//                     aspect-ratio: 1/1;
+//                 }
+//             }
+//         }
+
+//         &__cont{
+//             gap: 1rem;
+//             // justify-content: space-around;
+
+//             &--item{
+//                 width: 25%;
+//                 padding: .5rem;
+//             }
+//         }
+//     }
+// }
