@@ -96,7 +96,7 @@ function incrementCounters() {
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        rect.top < window.innerHeight && 
+        rect.top < window.innerHeight &&
         rect.bottom > 0 // Check if any part of the element is visible
     );
 }
@@ -117,4 +117,128 @@ window.addEventListener('scroll', function () {
             countersTriggered = true; // Prevent multiple executions
         }
     }
+});
+
+// Event data (can be imported from a separate file)
+const eventsData = [
+    {
+        id: 1,
+        title: 'ICACS 2025',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien at libero ultricies lacinia',
+        date: 'October 25th',
+        imageSrc: './resources/cspit/event_1.jpg'
+    },
+    {
+        id: 2,
+        title: 'TEDx CHARUSAT',
+        description: 'Description of Event 2',
+        date: '5th November 2024',
+        imageSrc: './resources/cspit/event_2.jpg'
+    },
+    {
+        id: 3,
+        title: 'Ganesh Chaturthi Celebration',
+        description: 'Description of Event 3',
+        date: '10th December 2024',
+        imageSrc: './resources/cspit/event_3.jpg'
+    },
+    {
+        id: 4,
+        title: 'Event 4',
+        description: 'Description of Event 4',
+        date: '2024-12-20',
+        imageSrc: 'path/to/image4.jpg'
+    },
+    {
+        id: 5,
+        title: 'Event 5',
+        description: 'Description of Event 5',
+        date: '2025-01-15',
+        imageSrc: 'path/to/image5.jpg'
+    }
+];
+
+function createEventCard(event) {
+    const card = document.createElement('div');
+    card.classList.add('event-card');
+
+    // Image element
+    const image = document.createElement('img');
+    image.classList.add('event-card-image');
+    image.src = event.imageSrc;
+    image.alt = event.title;
+
+    // Info container
+    const infoContainer = document.createElement('div');
+    infoContainer.classList.add('event-card-info');
+
+    // Title element
+    const title = document.createElement('h2');
+    title.classList.add('event-card-title');
+    title.textContent = event.title;
+
+    // Description element
+    const description = document.createElement('p');
+    description.classList.add('event-card-description');
+    description.textContent = event.description;
+
+    // Date element
+    const date = document.createElement('p');
+    date.classList.add('event-card-date');
+    date.textContent = `${event.date}`;
+
+    // Append elements to the info container
+    infoContainer.appendChild(title);
+    infoContainer.appendChild(date);
+    infoContainer.appendChild(description);
+
+    // Append the image and info container to the card
+    card.appendChild(image);
+    card.appendChild(infoContainer);
+
+    return card;
+}
+
+// Function to render the initial 3 event cards
+function renderInitialCards() {
+    const container = document.querySelector('.events-cards-container');
+    container.innerHTML = '';  // Clear existing cards
+
+    const initialEvents = eventsData.slice(0, 3);
+    initialEvents.forEach(event => {
+        const card = createEventCard(event);
+        container.appendChild(card);
+    });
+}
+
+// Function to render all event cards in the dialog
+function renderAllCards() {
+    const dialogContainer = document.querySelector('.events-dialog-cards-container');
+    dialogContainer.innerHTML = '';  // Clear existing cards
+
+    eventsData.forEach(event => {
+        const card = createEventCard(event);
+        dialogContainer.appendChild(card);
+    });
+}
+
+// Function to handle "More" button click
+function showAllCards() {
+    const dialog = document.querySelector('.events-dialog');
+    renderAllCards();  // Render all cards in the dialog
+    dialog.showModal();  // Open the dialog
+}
+
+// Function to handle dialog close
+function closeDialog() {
+    const dialog = document.querySelector('.events-dialog');
+    dialog.close();  // Close the dialog
+}
+
+// Initialize the component and set event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    renderInitialCards();  // Render initial cards
+
+    document.querySelector('.events-more-btn').addEventListener('click', showAllCards);
+    document.querySelector('.events-dialog-close-btn').addEventListener('click', closeDialog);
 });

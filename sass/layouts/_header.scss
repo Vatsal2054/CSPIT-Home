@@ -19,7 +19,7 @@
 
     &__cont {
         border-radius: 10px;
-        padding: calc(2px + .5vw) calc(5px + 1vw);
+        // padding: calc(2px + .5vw) calc(5px + 1vw);
         background-color: $header-background;
         color: $color-text-black;
         // background: linear-gradient(120deg, rgba(63, 107, 254, 0.4), rgba(255, 134, 35, 0.4));
@@ -35,13 +35,19 @@
     &__info {
         display: flex;
         align-items: center;
+        padding: 0 2rem;
+
+        @media (min-width: 768px) {
+            // display: none;
+            padding-right: 2rem;
+        }
     }
 
     &__logo {
         display: flex;
         align-items: center;
-        width: 5vw; /* 15% of the viewport width */
-        min-width: 3rem;
+        width: 5vw;
+        min-width: 2.8rem;
 
         img {
             width: 100%;
@@ -61,10 +67,43 @@
 
     &__nav {
         display: flex;
+        flex: 1;
         margin-left: auto;
         transition: height 0.5s ease-in-out;
         height: auto;
+        flex-direction: column;
+        align-items: flex-end;
         // overflow: hidden; /* Prevent overflow */
+        border-left: 1px solid #bbb;
+
+        .mini-nav{
+            list-style-type: none;
+            // margin-bottom: 5px;
+            margin-right: 20px;
+
+            &__item{
+                display: inline-block;
+                margin-left: 10px;
+                // border-radius: 10px;
+                color: $color-text-black;
+                padding: 16px 24px;
+                font-weight: 300;
+
+                // &:last-child{
+                //     border-radius: 0 10px 0 0;
+                // }
+                
+                &:hover, &:active, &:focus {
+                    background-color: rgba($color-theme-primary, 1);
+                    color: $color-text-white !important;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
         
         &--list {
             display: flex;
@@ -72,15 +111,35 @@
             padding: 0;
             margin: 0;
             height: auto;
+            width: 100%;
         }
         
         &--item {
             height: auto;
-            margin-left: 20px;
-            border-radius: 10px;
-            // overflow: hidden;
+            // margin-left: 20px;
+            flex: 1;
+            gap: 0;
+            display: flex;
+            justify-content: center;
+            text-wrap: nowrap;
+            // border-radius: 10px;
+            color: $color-text-black;
+            transition: all 0.3s ease;
+            border: 1px solid #bbb;
+            border-right: none;
+            border-bottom: none;
+
+            &:last-child{
+                border-radius: 0 0 10px 0;
+            }
+
+            &:first-child{
+                border-left: none;
+            }
+
             &:hover, &:active, &:focus {
-                background-color: rgba($color-theme-primary, 0.4);
+                background-color: rgba($color-theme-primary, 1);
+                color: $color-text-white !important;
             }
         }
         
@@ -88,13 +147,13 @@
             &,
             &:visited,
             &:link {
-                color: $color-text-black;
+                color: inherit;
                 font-weight: 600;
                 font-size: 1.2rem;
                 letter-spacing: -1px;
                 text-decoration: none;
                 display: inline-block;
-                padding: 8px 16px;
+                padding: 16px;
             }
             
             display: inline-block;
@@ -136,12 +195,41 @@
 
                 ul{
                     display: block;
-                    width: 15rem;
+                    width: 100%;
                     position: absolute;
                     top: 100%;
                     right: 0;
                     z-index: 12;
+                    
                 }
+            }
+        }
+    }
+
+    &__dropdown{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        flex-wrap: nowrap;
+        width: 100%;
+        border-radius: 0 0 10px 10px !important;
+
+        .dropdown-item{
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: left;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            color: $color-text-black;
+            transition: all 0.3s ease;
+
+            &:hover, &:active, &:focus {
+                background-color: rgba($color-theme-primary, 1);
+                color: $color-text-white !important;
             }
         }
     }

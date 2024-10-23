@@ -427,6 +427,136 @@ a {
         position: relative;
         /* In layout when visible */ }
 
+.events {
+  width: 100%; }
+  .events-section {
+    width: 100%;
+    padding: 5% 7%; }
+    .events-section--head {
+      width: 100%;
+      font-size: clamp(1.5625rem, 1.25vw + 1rem, 3.75rem);
+      font-weight: 700;
+      letter-spacing: -2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem; }
+      .events-section--head .svg-cont {
+        width: 5rem;
+        height: 5rem;
+        padding: .8rem;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgba(255, 122, 28, 0.1);
+        box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405); }
+        @media (max-width: 768px) {
+          .events-section--head .svg-cont {
+            width: 4rem;
+            height: 4rem; } }
+        .events-section--head .svg-cont svg {
+          margin: -1px 0 0 0; }
+  .events-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0; }
+    .events-cards-container .event-card {
+      width: 28%;
+      height: auto;
+      border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all .3s;
+      display: flex;
+      flex-direction: column;
+      background-color: #3373e3;
+      letter-spacing: -.5px; }
+      .events-cards-container .event-card-image {
+        max-width: 100%;
+        background-size: contain; }
+      .events-cards-container .event-card-info {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        color: #fff;
+        transition: all .3s;
+        text-align: left;
+        overflow: hidden; }
+      .events-cards-container .event-card:hover {
+        transform: scale(1.05); }
+  .events-more-btn {
+    margin: 2rem auto;
+    padding: 10px 20px;
+    display: block;
+    width: 15%;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+    color: #fff;
+    background-color: #ff7a1c; }
+    .events-more-btn:hover {
+      background-color: #d06315; }
+
+.courses {
+  padding: 5%;
+  background-color: #4287fe;
+  color: #333; }
+  .courses-section {
+    width: 100%;
+    padding: 5% 7%; }
+    .courses-section--head {
+      width: 100%;
+      font-size: clamp(1.5625rem, 1.25vw + 1rem, 3.75rem);
+      font-weight: 700;
+      letter-spacing: -2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      padding: 1rem;
+      border-radius: 4rem;
+      background-color: #ffffffa7; }
+      .courses-section--head .svg-cont {
+        width: 5rem;
+        height: 5rem;
+        padding: .5rem;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: .5rem;
+        background-color: #ffffff; }
+        @media (max-width: 768px) {
+          .courses-section--head .svg-cont {
+            width: 4rem;
+            height: 4rem; } }
+        .courses-section--head .svg-cont svg {
+          margin: 2px 0 0 0; }
+  .courses__cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+    flex-wrap: wrap; }
+    .courses__cont--item {
+      width: 14%;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 1rem;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 1rem;
+      aspect-ratio: 1/1;
+      border: 5px solid #fff; }
+      .courses__cont--item img {
+        width: 100%;
+        object-fit: cover; }
+
 .scrolled {
   padding: 0 0 !important;
   margin: 0 0 !important; }
@@ -444,7 +574,6 @@ a {
   box-sizing: border-box; }
   .header__cont {
     border-radius: 10px;
-    padding: calc(2px + .5vw) calc(5px + 1vw);
     background-color: #ffffffa7;
     color: #333;
     -webkit-backdrop-filter: blur(20px);
@@ -455,13 +584,16 @@ a {
     height: auto; }
   .header__info {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0 2rem; }
+    @media (min-width: 768px) {
+      .header__info {
+        padding-right: 2rem; } }
   .header__logo {
     display: flex;
     align-items: center;
     width: 5vw;
-    /* 15% of the viewport width */
-    min-width: 3rem; }
+    min-width: 2.8rem; }
     .header__logo img {
       width: 100%; }
   .header__logo--name {
@@ -472,33 +604,66 @@ a {
       letter-spacing: -2px; }
   .header__nav {
     display: flex;
+    flex: 1;
     margin-left: auto;
     transition: height 0.5s ease-in-out;
-    height: auto; }
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    border-left: 1px solid #bbb; }
+    .header__nav .mini-nav {
+      list-style-type: none;
+      margin-right: 20px; }
+      .header__nav .mini-nav__item {
+        display: inline-block;
+        margin-left: 10px;
+        color: #333;
+        padding: 16px 24px;
+        font-weight: 300; }
+        .header__nav .mini-nav__item:hover, .header__nav .mini-nav__item:active, .header__nav .mini-nav__item:focus {
+          background-color: #4287fe;
+          color: #fff !important; }
+        .header__nav .mini-nav__item a {
+          text-decoration: none;
+          color: inherit; }
     .header__nav--list {
       display: flex;
       list-style: none;
       padding: 0;
       margin: 0;
-      height: auto; }
+      height: auto;
+      width: 100%; }
     .header__nav--item {
       height: auto;
-      margin-left: 20px;
-      border-radius: 10px; }
+      flex: 1;
+      gap: 0;
+      display: flex;
+      justify-content: center;
+      text-wrap: nowrap;
+      color: #333;
+      transition: all 0.3s ease;
+      border: 1px solid #bbb;
+      border-right: none;
+      border-bottom: none; }
+      .header__nav--item:last-child {
+        border-radius: 0 0 10px 0; }
+      .header__nav--item:first-child {
+        border-left: none; }
       .header__nav--item:hover, .header__nav--item:active, .header__nav--item:focus {
-        background-color: rgba(66, 135, 254, 0.4); }
+        background-color: #4287fe;
+        color: #fff !important; }
     .header__nav--link {
       display: inline-block;
       padding: 10px 20px;
       text-decoration: none; }
       .header__nav--link, .header__nav--link:visited, .header__nav--link:link {
-        color: #333;
+        color: inherit;
         font-weight: 600;
         font-size: 1.2rem;
         letter-spacing: -1px;
         text-decoration: none;
         display: inline-block;
-        padding: 8px 16px; }
+        padding: 16px; }
       .header__nav--link:hover, .header__nav--link:active, .header__nav--link:focus {
         text-decoration: none; }
     .header__nav--dropdown {
@@ -520,11 +685,33 @@ a {
             width: 100%; }
       .header__nav--dropdown:hover ul {
         display: block;
-        width: 15rem;
+        width: 100%;
         position: absolute;
         top: 100%;
         right: 0;
         z-index: 12; }
+  .header__dropdown {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-radius: 0 0 10px 10px !important; }
+    .header__dropdown .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      text-align: left;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+      color: #333;
+      transition: all 0.3s ease; }
+      .header__dropdown .dropdown-item:hover, .header__dropdown .dropdown-item:active, .header__dropdown .dropdown-item:focus {
+        background-color: #4287fe;
+        color: #fff !important; }
   .header__menu-btn {
     display: none;
     background: none;
@@ -638,7 +825,7 @@ a {
       color: #007bff; }
   .university-footer .separator {
     width: 100%;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(to right, #4287fe, #ff7a1c); }
   .university-footer__bottom {
     padding-top: 1rem; }
