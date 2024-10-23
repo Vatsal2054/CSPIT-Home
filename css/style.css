@@ -465,25 +465,36 @@ a {
     .events-cards-container .event-card {
       width: 28%;
       height: auto;
-      border-radius: 1rem;
+      border-radius: 1.5rem;
       position: relative;
       overflow: hidden;
       transition: all .3s;
       display: flex;
       flex-direction: column;
-      background-color: #3373e3;
+      background-color: #4982e6;
       letter-spacing: -.5px; }
       .events-cards-container .event-card-image {
         max-width: 100%;
-        background-size: contain; }
+        background-size: contain;
+        border-radius: 0 0 2rem 2rem; }
       .events-cards-container .event-card-info {
         width: 100%;
-        padding: 1rem;
+        padding: .5rem 1rem 1rem 1rem;
         margin: 0;
         color: #fff;
         transition: all .3s;
         text-align: left;
         overflow: hidden; }
+      .events-cards-container .event-card-title {
+        margin-bottom: 4px; }
+      .events-cards-container .event-card-date {
+        margin-bottom: 4px;
+        display: inline-block;
+        font-weight: 700;
+        color: #333;
+        padding: 8px 16px;
+        border-radius: 4rem;
+        background-color: #ffffffa7; }
       .events-cards-container .event-card:hover {
         transform: scale(1.05); }
   .events-more-btn {
@@ -708,7 +719,7 @@ a {
       overflow: hidden;
       background-color: #fff;
       color: #333;
-      transition: all 0.3s ease; }
+      transition: all 0.2s ease; }
       .header__dropdown .dropdown-item:hover, .header__dropdown .dropdown-item:active, .header__dropdown .dropdown-item:focus {
         background-color: #4287fe;
         color: #fff !important; }

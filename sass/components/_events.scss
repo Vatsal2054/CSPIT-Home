@@ -41,51 +41,52 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        // gap: 8%;
         justify-content: space-between;
         padding: 1rem 0;
 
         .event-card{
             width: 28%;
             height: auto;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
             position: relative;
-            // aspect-ratio: 1/1;
             overflow: hidden;
             transition: all .3s;
             display: flex;
             flex-direction: column;
-            background-color: lighten($color-theme-primary-dark, 10%);
+            background-color: lighten($color-theme-primary-dark, 15%);
             letter-spacing: -.5px;
             
             &-image {
                 max-width: 100%;
-                // aspect-ratio: 1/1;
-                // height: 200px;
                 background-size: contain;
-                // background-position: center;
+                border-radius: 0 0 2rem 2rem;
             }
 
             &-info{
-                // position: absolute;
-                // top: 100%;
-                // bottom: 0;
-                // left: 0;
                 width: 100%;
-                // z-index: 10;
-                padding: 1rem;
+                padding: .5rem 1rem 1rem 1rem;
                 margin: 0;
-                // border-radius: 0 0 10px 10px;
-                // background-color: $header-background;
-                // -webkit-backdrop-filter: blur(20px);
-                // backdrop-filter: blur(20px);
                 color: $color-text-white;
                 transition: all .3s;
                 text-align: left;
-                // transform: translateY(100%);
                 overflow: hidden;
             }
             
+            &-title{
+                margin-bottom: 4px;
+            }
+
+            &-date{
+                margin-bottom: 4px;
+                display: inline-block;
+                font-weight: 700;
+                color: $color-text-black;
+                padding: 8px 16px;
+                border-radius: 4rem;
+                // margin-left: -8px;
+                // background-color: lighten($color-theme-secondary, 5%);
+                background-color: $header-background;
+            }
 
             &:hover{
                 transform: scale(1.05);

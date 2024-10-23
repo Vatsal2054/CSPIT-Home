@@ -132,7 +132,7 @@ const eventsData = [
         id: 2,
         title: 'TEDx CHARUSAT',
         description: 'Description of Event 2',
-        date: '5th November 2024',
+        date: 'September 24th',
         imageSrc: './resources/cspit/event_2.jpg'
     },
     {
@@ -188,8 +188,8 @@ function createEventCard(event) {
     date.textContent = `${event.date}`;
 
     // Append elements to the info container
-    infoContainer.appendChild(title);
     infoContainer.appendChild(date);
+    infoContainer.appendChild(title);
     infoContainer.appendChild(description);
 
     // Append the image and info container to the card
