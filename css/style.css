@@ -9,7 +9,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Inter", sans-serif;
@@ -643,6 +644,60 @@ a {
 @media (max-width: 480px) {
   .testimonial-card {
     width: 100%; } }
+
+.chapters {
+  padding: 5%;
+  background-color: #ff8026;
+  color: #333; }
+  .chapters-section {
+    width: 100%;
+    padding: 5% 7%; }
+    .chapters-section--head {
+      width: 100%;
+      font-size: clamp(1.5625rem, 1.25vw + 1rem, 3.75rem);
+      font-weight: 700;
+      letter-spacing: -2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      padding: 1rem;
+      border-radius: 4rem;
+      background-color: #ffffffa7; }
+      .chapters-section--head .svg-cont {
+        width: 5rem;
+        height: 5rem;
+        padding: .4rem;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: .5rem;
+        background-color: #ffffff; }
+        @media (max-width: 768px) {
+          .chapters-section--head .svg-cont {
+            width: 4rem;
+            height: 4rem; } }
+        .chapters-section--head .svg-cont svg {
+          margin: 0 0 0 -2px; }
+  .chapters__cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+    flex-wrap: wrap; }
+    .chapters__cont--item {
+      width: 14%;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 1rem;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 1rem;
+      aspect-ratio: 1/1;
+      border: 5px solid #fff; }
+      .chapters__cont--item img {
+        width: 100%;
+        object-fit: cover; }
 
 .scrolled {
   padding: 0 0 !important;
