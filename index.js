@@ -251,42 +251,42 @@ const testimonials = [
         name: 'John Doe',
         designation: 'Software Engineer',
         testimonial: 'This service has been a game changer for me. The team is professional and the results are outstanding.',
-        imageSrc: '/resources/Testimonials/image-1.png'
+        imageSrc: './resources/Testimonials/image-1.png'
     },
     {
         id: 2,
         name: 'Jane Smith',
         designation: 'Product Manager',
         testimonial: 'I have never been so impressed with a company’s dedication to customer success. Highly recommended!',
-        imageSrc: '/resources/Testimonials/image-2.png'
+        imageSrc: './resources/Testimonials/image-2.png'
     },
     {
         id: 3,
         name: 'Michael Lee',
         designation: 'UX Designer',
         testimonial: 'Their attention to detail and passion for creating great products is truly remarkable.',
-        imageSrc: '/resources/Testimonials/image-3.webp'
+        imageSrc: './resources/Testimonials/image-3.webp'
     },
     {
         id: 4,
         name: 'Emily Davis',
         designation: 'Marketing Specialist',
         testimonial: 'The team provided us with a top-notch solution. The process was smooth and the results exceeded expectations.',
-        imageSrc: '/resources/Testimonials/image-4.webp'
+        imageSrc: './resources/Testimonials/image-4.webp'
     },
     {
         id: 5,
         name: 'David Clark',
         designation: 'CEO, Startup',
         testimonial: 'Amazing results. Their work ethic and quality of output are unmatched.',
-        imageSrc: '/resources/Testimonials/image-5.webp'
+        imageSrc: './resources/Testimonials/image-5.webp'
     },
     {
         id: 6,
         name: 'Sophia White',
         designation: 'Creative Director',
         testimonial: 'We have been very pleased with the outcomes. The communication and service are simply brilliant.',
-        imageSrc: '/resources/Testimonials/image-6.jpeg'
+        imageSrc: './resources/Testimonials/image-6.jpeg'
     }
 ];
 
