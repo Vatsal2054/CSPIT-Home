@@ -4,6 +4,10 @@
     height: 100vh;
     // background-image: url("../../resources/cspit/slideshow (1).webp");
     // background-size: cover;
+
+    @media (max-width: 768px) {
+        height: 100dvh;
+    }
 }
 
 .slideshow-container {
