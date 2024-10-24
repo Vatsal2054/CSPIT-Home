@@ -167,6 +167,7 @@ function createEventCard(event) {
     image.classList.add('event-card-image');
     image.src = event.imageSrc;
     image.alt = event.title;
+    image.loading = 'lazy';
 
     // Info container
     const infoContainer = document.createElement('div');
@@ -299,6 +300,7 @@ function createTestimonialCard(testimonial) {
     image.classList.add('testimonial-card-image');
     image.src = testimonial.imageSrc;
     image.alt = testimonial.name;
+    image.loading = 'lazy';
 
     // Info wrapper
     const infoWrapper = document.createElement('div');
