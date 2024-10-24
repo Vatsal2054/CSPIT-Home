@@ -175,6 +175,10 @@
 }
 
 @media (max-width: 768px) {
+    .programs__cont--header{
+        padding: 2rem 0;
+    }
+
     .program__list {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }

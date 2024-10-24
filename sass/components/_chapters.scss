@@ -1,6 +1,6 @@
 .chapters{
     padding: 5%;
-    background-color: lighten($color-theme-secondary, 2%);
+    background-color: lighten($color-theme-primary, 0%);
     // background-color: $color-back-1;
     // background: linear-gradient(to right, $color-theme-primary, $color-theme-secondary);
     color: $color-text-black;
@@ -79,12 +79,14 @@
 
 @media (max-width: 768px) {
     .chapters{
+        padding: 10% 4%;
+
         &-section{
             &--head {
                 font-size: 1rem;
                 gap: .5rem;
                 padding: .4rem;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
 
                 .svg-cont{
                     width: 3rem;

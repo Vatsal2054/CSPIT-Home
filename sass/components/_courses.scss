@@ -79,11 +79,14 @@
 
 @media (max-width: 768px) {
     .courses{
+        padding: 10% 5%;
+
         &-section{
             &--head {
                 font-size: 1rem;
                 gap: .5rem;
                 padding: .5rem .8rem;
+                margin-bottom: 3rem;
 
                 .svg-cont{
                     width: 3rem;
