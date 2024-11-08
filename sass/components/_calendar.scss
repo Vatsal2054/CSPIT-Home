@@ -1,0 +1,50 @@
+.calendar{
+    &-section {
+        width: 100%;
+        padding: 5% 7%;
+        background-color: #fff;
+
+        &--head {
+            width: 100%;
+            font-size: responsive-font-size(2.5); // Reduced font size
+            font-weight: 700;
+            letter-spacing: -2px; // Reduced letter-spacing
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .svg-cont {
+                width: 5rem; // Reduced width
+                height: 5rem; // Reduced height
+                padding: .8rem; // Reduced padding
+                display: inline-block;
+                border-radius: 50%;
+                background-color: rgba($color-theme-secondary, 0.1);
+                box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405);
+
+                svg {
+                    margin: -1px 0 0 0;
+                }
+            }
+        }
+    }
+
+    &__cont{
+
+        &--main {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+
+            iframe{
+                border-radius: 2.4rem;
+                padding: 1rem;
+                background-color: #eff4f8;
+                // margin: 1rem;
+                overflow: hidden;
+            }
+        }
+    }
+}

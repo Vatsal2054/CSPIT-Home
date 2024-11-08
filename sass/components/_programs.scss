@@ -1,6 +1,9 @@
 .programs {
     width: 100vw;
     padding: 5%;
+    background-image: url(".././resources/backgrounds/dotted-bg.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
 
     &__cont {
         width: 100%;
@@ -72,21 +75,22 @@
         letter-spacing: -1px;
         overflow: hidden;
         transition: all .3s;
+        background-color: #fff;
 
         &:hover {
             box-shadow: 0 0 20px rgba(#333, 0.3);
         }
 
         /* Background images for each item */
-        &:nth-child(1) { .program__name { background-image: url(".././resources/backgrounds/mesh-1.webp"); } }
-        &:nth-child(2) { .program__name { background-image: url(".././resources/backgrounds/mesh-2.webp"); } }
-        &:nth-child(3) { .program__name { background-image: url(".././resources/backgrounds/mesh-3.webp"); } }
-        &:nth-child(4) { .program__name { background-image: url(".././resources/backgrounds/mesh-4.webp"); } }
-        &:nth-child(5) { .program__name { background-image: url(".././resources/backgrounds/mesh-5.webp"); } }
-        &:nth-child(6) { .program__name { background-image: url(".././resources/backgrounds/mesh-6.webp"); } }
-        &:nth-child(7) { .program__name { background-image: url(".././resources/backgrounds/mesh-7.webp"); } }
-        &:nth-child(8) { .program__name { background-image: url(".././resources/backgrounds/mesh-8.webp"); } }
-        &:nth-child(9) { .program__name { background-image: url(".././resources/backgrounds/mesh-9.webp"); } }
+        // &:nth-child(1) { .program__name { background-image: url(".././resources/backgrounds/mesh-1.webp"); } }
+        // &:nth-child(2) { .program__name { background-image: url(".././resources/backgrounds/mesh-2.webp"); } }
+        // &:nth-child(3) { .program__name { background-image: url(".././resources/backgrounds/mesh-3.webp"); } }
+        // &:nth-child(4) { .program__name { background-image: url(".././resources/backgrounds/mesh-4.webp"); } }
+        // &:nth-child(5) { .program__name { background-image: url(".././resources/backgrounds/mesh-5.webp"); } }
+        // &:nth-child(6) { .program__name { background-image: url(".././resources/backgrounds/mesh-6.webp"); } }
+        // &:nth-child(7) { .program__name { background-image: url(".././resources/backgrounds/mesh-7.webp"); } }
+        // &:nth-child(8) { .program__name { background-image: url(".././resources/backgrounds/mesh-8.webp"); } }
+        // &:nth-child(9) { .program__name { background-image: url(".././resources/backgrounds/mesh-9.webp"); } }
 
         .font-small {
             font-size: responsive-font-size(1.5); // Reduced font size
@@ -108,9 +112,13 @@
         align-items: center;
         border-bottom: 1px solid #ddd;
         font-weight: 600;
-        font-size: responsive-font-size(2); // Reduced font size
+        font-size: responsive-font-size(1.8); // Reduced font size
         background-size: cover;
         background-repeat: no-repeat;
+        color: $color-text-white;
+        // background-color: darken($color-head-icon-box, 10%);
+        background-color: $color-head-icon-box-2;
+        background-image: linear-gradient(to right bottom, #73c0f4, #1963be);
         overflow: hidden;
     }
 
@@ -165,7 +173,7 @@
             letter-spacing: -1px;
             cursor: pointer;
             transition: background-color 0.3s;
-            background-color: lighten($color-text-black, 70%);
+            // background-color: $color-head-icon-box-2;
 
             &:hover {
                 background-color: lighten($color-theme-secondary, 30%);
