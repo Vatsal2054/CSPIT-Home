@@ -69,7 +69,7 @@ a {
     .section-intro__cont .highlight {
       font-weight: 600;
       letter-spacing: -1.5px;
-      background-image: linear-gradient(120deg, #4287fe, #ff7a1c);
+      background-image: linear-gradient(120deg, #0065b3, #ff7a1c);
       background-clip: text;
       color: transparent; }
     .section-intro__cont .intro-module {
@@ -91,7 +91,7 @@ a {
 
 .message-section {
   padding: 6rem 0;
-  background: linear-gradient(120deg, #4287fe, #ff7a1c);
+  background: linear-gradient(120deg, #0065b3, #ff7a1c);
   color: #fff; }
   .message-section .inner-image {
     display: none; }
@@ -562,7 +562,7 @@ a {
 
 .courses {
   padding: 5%;
-  background-color: #4287fe;
+  background-color: #0065b3;
   color: #333; }
   .courses-section {
     width: 100%;
@@ -587,7 +587,8 @@ a {
         display: inline-block;
         border-radius: 50%;
         margin-right: .5rem;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
         @media (max-width: 768px) {
           .courses-section--head .svg-cont {
             width: 4rem;
@@ -635,7 +636,7 @@ a {
 
 .testimonials-section {
   padding: 5%;
-  background-color: #4287fe;
+  background-color: #0065b3;
   width: 100%;
   padding: 5% 7%;
   letter-spacing: -0.5px; }
@@ -658,7 +659,8 @@ a {
       padding: 0.5rem;
       display: inline-block;
       border-radius: 50%;
-      background-color: #fff; }
+      background-color: #f0f7fc;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
       @media (max-width: 768px) {
         .testimonials-section--head .svg-cont {
           width: 4rem;
@@ -739,7 +741,7 @@ a {
 
 .chapters {
   padding: 5%;
-  background-color: #4287fe;
+  background-color: #0065b3;
   color: #333; }
   .chapters-section {
     width: 100%;
@@ -875,7 +877,7 @@ a {
         padding: 16px 24px;
         font-weight: 300; }
         .header__nav .mini-nav__item:hover, .header__nav .mini-nav__item:active, .header__nav .mini-nav__item:focus {
-          background-color: #4287fe;
+          background-color: #0065b3;
           color: #fff !important; }
         .header__nav .mini-nav__item a {
           text-decoration: none;
@@ -917,7 +919,7 @@ a {
       .header__nav--item:first-child {
         border-left: none; }
       .header__nav--item:hover, .header__nav--item:active, .header__nav--item:focus {
-        background-color: #4287fe;
+        background-color: #0065b3;
         color: #fff !important; }
       @media (max-width: 768px) {
         .header__nav--item {
@@ -1002,7 +1004,7 @@ a {
       color: #333;
       transition: all 0.2s ease; }
       .header__dropdown .dropdown-item:hover, .header__dropdown .dropdown-item:active, .header__dropdown .dropdown-item:focus {
-        background-color: #4287fe;
+        background-color: #0065b3;
         color: #fff !important; }
   .header__menu-btn {
     display: none;
@@ -1112,7 +1114,7 @@ a {
         .university-footer__contact .contact-list .contact-item .contact-icon {
           width: 1.5rem;
           margin-right: 1rem;
-          color: #4287fe; }
+          color: #0065b3; }
         .university-footer__contact .contact-list .contact-item .contact-text {
           line-height: 1.5; }
     @media (min-width: 768px) {
@@ -1157,7 +1159,7 @@ a {
   .university-footer .separator {
     width: 100%;
     height: 5px;
-    background: linear-gradient(to right, #4287fe, #ff7a1c); }
+    background: linear-gradient(to right, #0065b3, #ff7a1c); }
   .university-footer__bottom {
     padding-top: 1rem; }
   .university-footer__copyright {
