@@ -1,0 +1,107 @@
+.clubs {
+    &-section {
+        background-color: lighten($color-theme-primary, 0%);
+        width: 100%;
+        padding: 5% 7%;
+
+        
+        &--head {
+            width: 100%;
+            font-size: responsive-font-size(2.5); // Reduced font size
+            font-weight: 700;
+            letter-spacing: -2px; // Reduced letter-spacing
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 4rem;
+            padding: 1rem;
+            border-radius: 4rem;
+            background-color: $header-background;
+            
+            @media (max-width: 768px) {
+                margin-bottom: 2rem;
+            }
+
+            .svg-cont {
+                width: 5rem; // Reduced width
+                height: 5rem; // Reduced height
+                padding: 0.3rem; // Reduced padding
+                display: inline-block;
+                border-radius: 50%;
+                background-color: #ffffff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+                
+                @media (max-width: 768px) {
+                    width: 4rem;
+                    height: 4rem;
+                }
+                
+                svg {
+                    margin: -2px 0 0 0;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 10% 5%;
+    
+            &--head {
+                font-size: 1rem;
+                gap: 0.5rem;
+                padding: 0.4rem;
+                margin-bottom: 3rem;
+                margin-top: 1rem;
+    
+                .svg-cont {
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 0;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+    }
+
+    &-cards-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 0 1rem;
+        
+        // Responsive grid layout
+        
+        .club-card {
+            background-color: #fff;
+            padding: 1rem;
+            display: flex;
+            aspect-ratio: 1 / 1;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+            // margin: 1rem 1.5rem;
+
+            @media (min-width: 1024px) {
+                width: 15%;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 30%;
+            }
+            @media (max-width: 767px) {
+                width: 30%;
+            }
+
+            img {
+                max-width: 100%;
+                height: 100%;
+                // max-width: 130px; // Set a fixed width for the image container
+                object-fit: contain;
+            }
+        }
+
+        @media (max-width: 768px) {
+            gap: 1rem;
+        }
+    }
+}

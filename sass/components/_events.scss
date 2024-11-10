@@ -23,7 +23,7 @@
                 display: inline-block;
                 border-radius: 50%;
                 background-color: rgba($color-theme-secondary, 0.1);
-                box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405);
+                box-shadow: 0 0 10px 0 rgba(200, 97, 1, 0.405);
 
                 svg {
                     margin: -1px 0 0 0;
@@ -122,12 +122,13 @@
             &--head {
                 font-size: 1rem;
                 gap: .5rem;
-                padding: .5rem .8rem;
+                padding: 1rem;
                 margin-bottom: 1rem;
 
                 .svg-cont{
                     width: 3rem;
                     height: 3rem;
+                    padding: .4rem;
                     margin: 0 .4rem 0 -.5rem;
                     aspect-ratio: 1/1;
                 }

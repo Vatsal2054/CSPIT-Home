@@ -1,7 +1,7 @@
 .message-section {
     padding: 6rem 0;
     // background: lighten($color-theme-primary, 0%);
-    background: linear-gradient(120deg, $color-theme-primary, $color-theme-secondary);
+    background: linear-gradient(to right, $color-theme-primary, $color-theme-secondary);
     color: $color-text-white;
 
     .inner-image{

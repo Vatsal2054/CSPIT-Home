@@ -346,3 +346,54 @@ function renderTestimonials() {
 
 // Initialize the testimonials section
 document.addEventListener('DOMContentLoaded', renderTestimonials);
+
+//**********************************ANIMATIONS**********************************//
+// Function to observe elements and add the 'in-view' class
+function setupIntersectionObserver() {
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+    const observerOptions = {
+        threshold: 0.2 // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Optionally stop observing after animation
+            }
+        });
+    }, observerOptions);
+
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+}
+
+// Run the function to setup the observer
+setupIntersectionObserver();
+
+function animateHeadersOnScroll() {
+    const headers = document.querySelectorAll('.section--head');
+
+    const observerOptions = {
+        threshold: 1 // Adjust based on when you want to trigger the animation
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Stop observing after animating
+            }
+        });
+    }, observerOptions);
+
+    headers.forEach(header => {
+        observer.observe(header);
+    });
+}
+
+// Initialize the observer
+animateHeadersOnScroll();
+

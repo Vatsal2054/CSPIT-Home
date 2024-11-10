@@ -2,7 +2,25 @@
     &-section {
         width: 100%;
         padding: 5% 7%;
-        background-color: #fff;
+        // background-color: #fff;
+        background-image: url("../../resources/backgrounds/background-calendar.jpg");
+        // background-repeat: repeat;
+        background-size: contain;
+        position: relative;
+        z-index: 0;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.263);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
 
         &--head {
             width: 100%;
@@ -14,36 +32,75 @@
             align-items: center;
             gap: 1rem;
             margin-bottom: 2rem;
-
+            padding: 1rem;
+            border-radius: 4rem;
+            background-color: $header-background;
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            // display: block;
+    
             .svg-cont {
                 width: 5rem; // Reduced width
                 height: 5rem; // Reduced height
-                padding: .8rem; // Reduced padding
+                padding: 0.5rem; // Reduced padding
                 display: inline-block;
                 border-radius: 50%;
-                background-color: rgba($color-theme-secondary, 0.1);
-                box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405);
-
+                background-color: $color-head-icon-box;
+                // background-color: rgba($color-theme-secondary, 0.1);
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    
+    
+                @media (max-width: 768px) {
+                    width: 4rem;
+                    height: 4rem;
+                }
+    
                 svg {
-                    margin: -1px 0 0 0;
+                    // margin: -1px 0 0 0;
                 }
             }
         }
     }
 
     &__cont{
+        position: relative;
+        z-index: 2;
 
         &--main {
-            padding: 2rem 0;
+            padding: 0rem 0;
             display: flex;
             justify-content: center;
 
             iframe{
                 border-radius: 2.4rem;
                 padding: 1rem;
+                // padding-bottom: -2rem;
                 background-color: #eff4f8;
                 // margin: 1rem;
                 overflow: hidden;
+                transform: scale(.9);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-section{
+        padding: 10% 5%;
+        &--head{
+            font-size: 1rem;
+            gap: 0.5rem;
+            padding: 0.4rem;
+            margin-bottom: 3rem;
+            // letter-spacing: -1px;
+            margin-top: 1rem;
+
+            .svg-cont{
+                width: 3rem;
+                height: 3rem;
+                margin-right: 0;
+                aspect-ratio: 1/1;
             }
         }
     }

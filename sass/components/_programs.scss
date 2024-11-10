@@ -1,8 +1,8 @@
 .programs {
     width: 100vw;
-    padding: 5%;
+    padding: 3% 5%;
     background-image: url(".././resources/backgrounds/dotted-bg.png");
-    // background-size: cover;
+    background-size: 40%;
     // background-repeat: no-repeat;
 
     &__cont {
@@ -25,7 +25,7 @@
                 display: inline-block;
                 border-radius: 50%;
                 background-color: rgba($color-theme-secondary, 0.1);
-                box-shadow: 0 0 20px 0 rgba(200, 97, 1, 0.405);
+                box-shadow: 0 0 10px 0 rgba(200, 97, 1, 0.405);
 
                 @media (max-width: 768px) {
                     width: 4rem;
@@ -79,17 +79,21 @@
 
         &:hover {
             box-shadow: 0 0 20px rgba(#333, 0.3);
+
+            .program__name::before {
+                background-position: 100%;
+            }
         }
 
         /* Background images for each item */
-        // &:nth-child(1) { .program__name { background-image: url(".././resources/backgrounds/mesh-1.webp"); } }
-        // &:nth-child(2) { .program__name { background-image: url(".././resources/backgrounds/mesh-2.webp"); } }
-        // &:nth-child(3) { .program__name { background-image: url(".././resources/backgrounds/mesh-3.webp"); } }
-        // &:nth-child(4) { .program__name { background-image: url(".././resources/backgrounds/mesh-4.webp"); } }
-        // &:nth-child(5) { .program__name { background-image: url(".././resources/backgrounds/mesh-5.webp"); } }
-        // &:nth-child(6) { .program__name { background-image: url(".././resources/backgrounds/mesh-6.webp"); } }
-        // &:nth-child(7) { .program__name { background-image: url(".././resources/backgrounds/mesh-7.webp"); } }
-        // &:nth-child(8) { .program__name { background-image: url(".././resources/backgrounds/mesh-8.webp"); } }
+        &:nth-child(1) { .program__name { background-image: url("../../resources/programs/programs\ \(5\).webp"); } }
+        &:nth-child(2) { .program__name { background-image: url("../../resources/programs/programs\ \(1\).webp"); } }
+        &:nth-child(3) { .program__name { background-image: url("../../resources/programs/programs\ \(6\).webp"); } }
+        &:nth-child(4) { .program__name { background-image: url("../../resources/programs/programs\ \(4\).webp"); } }
+        &:nth-child(5) { .program__name { background-image: url("../../resources/programs/programs\ \(8\).webp"); } }
+        &:nth-child(6) { .program__name { background-image: url("../../resources/programs/programs\ \(7\).webp"); } }
+        &:nth-child(7) { .program__name { background-image: url("../../resources/programs/programs\ \(3\).webp"); } }
+        &:nth-child(8) { .program__name { background-image: url("../../resources/programs/programs\ \(2\).webp"); } }
         // &:nth-child(9) { .program__name { background-image: url(".././resources/backgrounds/mesh-9.webp"); } }
 
         .font-small {
@@ -106,20 +110,37 @@
     }
 
     &__name {
-        padding: 0 6%; // Reduced padding
-        height: 10rem; // Reduced height for smaller aspect ratio
+        padding: 6%; // Reduced padding
+        height: 14rem; // Reduced height for smaller aspect ratio
+        position: relative;
+        z-index: 0;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         border-bottom: 1px solid #ddd;
-        font-weight: 600;
-        font-size: responsive-font-size(1.8); // Reduced font size
+        font-weight: 700;
+        font-size: responsive-font-size(1.9); // Reduced font size
         background-size: cover;
         background-repeat: no-repeat;
         color: $color-text-white;
         // background-color: darken($color-head-icon-box, 10%);
         background-color: $color-head-icon-box-2;
-        background-image: linear-gradient(to right bottom, #73c0f4, #1963be);
+        // background-image: linear-gradient(to right bottom, #73c0f4, #1963be);
+        // background-image: linear-gradient(to right bottom, lighten($color-theme-secondary, 15%), darken($color-theme-secondary, 12%));
         overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            transition: background-position 0.5s;
+            background: linear-gradient(15deg, #000000ab 0%, #ffffff00 90%);
+            background-size: 200%;
+            background-position: 0%;
+        }
     }
 
     &__info {
@@ -129,7 +150,7 @@
             list-style-type: none;
 
             li {
-                font-size: 1.1rem; // Reduced font size
+                font-size: responsive-font-size(1.1); // Reduced font size
                 padding: 0.4rem 0;
                 display: flex;
 
@@ -160,6 +181,7 @@
 
     &__actions {
         padding: 3%; // Reduced padding
+        padding-top: 0;
 
         button {
             width: 100%;
@@ -170,9 +192,10 @@
             font-weight: 700;
             font-size: 1rem; // Reduced font size
             border-radius: 1.5rem;
-            letter-spacing: -1px;
+            letter-spacing: -.5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            font-family: "Inter", sans-serif;
             // background-color: $color-head-icon-box-2;
 
             &:hover {
@@ -184,11 +207,20 @@
 
 @media (max-width: 768px) {
     .programs__cont--header{
-        padding: 2rem 0;
+        padding: 1rem;
+        margin-left: -1rem;
     }
 
     .program__list {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .program__info{
+        li {
+            display: flex;
+            align-items: center;
+            font-size: responsive-font-size(1.4) !important; // Further reduced font size
+        }
     }
 }
 
@@ -198,8 +230,8 @@
     }
 
     .program__name {
-        height: 8rem; // Reduced height for mobile devices
-        font-size: responsive-font-size(1.8); // Further reduced font size
+        height: 10rem; // Reduced height for mobile devices
+        font-size: responsive-font-size(2.2); // Further reduced font size
     }
 }
 

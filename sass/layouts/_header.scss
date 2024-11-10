@@ -4,6 +4,14 @@
 
     .header__cont{
         border-radius: 0 !important;
+        border-bottom: 1px solid #bbb;
+    }
+
+    .header__nav--item{
+
+        &:last-child{
+            border-radius: 0 0 0 0;
+        }
     }
 }
 
