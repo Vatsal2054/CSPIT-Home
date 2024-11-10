@@ -232,6 +232,16 @@ a {
           margin-right: -2px; }
     .programs__cont--main {
       padding: 3% 0; }
+      .programs__cont--main .postgraduate__list .program__item:nth-child(1) .program__name {
+        background-image: url(".././resources/programs/programs (9).webp"); }
+      .programs__cont--main .postgraduate__list .program__item:nth-child(2) .program__name {
+        background-image: url(".././resources/programs/programs (8).webp"); }
+      .programs__cont--main .postgraduate__list .program__item:nth-child(3) .program__name {
+        background-image: url(".././resources/programs/programs (2).webp"); }
+      .programs__cont--main .postgraduate__list .program__item:nth-child(4) .program__name {
+        background-image: url(".././resources/programs/programs (11).webp"); }
+      .programs__cont--main .postgraduate__list .program__item:nth-child(5) .program__name {
+        background-image: url(".././resources/programs/programs (10).webp"); }
 
 .program__category .category-name {
   font-size: 2.4rem;
@@ -267,21 +277,21 @@ a {
     .program__item:hover .program__name::before {
       background-position: 100%; }
   .program__item:nth-child(1) .program__name {
-    background-image: url("../../resources/programs/programs (5).webp"); }
+    background-image: url(".././resources/programs/programs (5).webp"); }
   .program__item:nth-child(2) .program__name {
-    background-image: url("../../resources/programs/programs (1).webp"); }
+    background-image: url(".././resources/programs/programs (1).webp"); }
   .program__item:nth-child(3) .program__name {
-    background-image: url("../../resources/programs/programs (6).webp"); }
+    background-image: url(".././resources/programs/programs (6).webp"); }
   .program__item:nth-child(4) .program__name {
-    background-image: url("../../resources/programs/programs (4).webp"); }
+    background-image: url(".././resources/programs/programs (4).webp"); }
   .program__item:nth-child(5) .program__name {
-    background-image: url("../../resources/programs/programs (8).webp"); }
+    background-image: url(".././resources/programs/programs (8).webp"); }
   .program__item:nth-child(6) .program__name {
-    background-image: url("../../resources/programs/programs (7).webp"); }
+    background-image: url(".././resources/programs/programs (7).webp"); }
   .program__item:nth-child(7) .program__name {
-    background-image: url("../../resources/programs/programs (3).webp"); }
+    background-image: url(".././resources/programs/programs (3).webp"); }
   .program__item:nth-child(8) .program__name {
-    background-image: url("../../resources/programs/programs (2).webp"); }
+    background-image: url(".././resources/programs/programs (2).webp"); }
   .program__item .font-small {
     font-size: clamp(0.9375rem, 0.75vw + 0.6rem, 2.25rem); }
   @media (max-width: 768px) {
@@ -748,7 +758,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between; }
+    justify-content: center; }
   .testimonials-section .testimonial-card {
     background-color: white;
     border-radius: 8px;
@@ -777,7 +787,9 @@ a {
         color: #ff7a1c;
         margin-bottom: 10px; }
       .testimonials-section .testimonial-card .testimonial-card-info .testimonial-card-paragraph {
-        font-size: 0.9em;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: -.5px;
         color: #333; }
 
 @media (max-width: 768px) {

@@ -40,6 +40,17 @@
 
         &--main {
             padding: 3% 0;
+
+            .postgraduate__list {
+                .program__item{
+                    &:nth-child(1) { .program__name { background-image: url(".././resources/programs/programs\ \(9\).webp"); } }
+                    &:nth-child(2) { .program__name { background-image: url(".././resources/programs/programs\ \(8\).webp"); } }
+                    &:nth-child(3) { .program__name { background-image: url(".././resources/programs/programs\ \(2\).webp"); } }
+                    &:nth-child(4) { .program__name { background-image: url(".././resources/programs/programs\ \(11\).webp"); } }
+                    &:nth-child(5) { .program__name { background-image: url(".././resources/programs/programs\ \(10\).webp"); } }
+                }
+            }
+        
         }
     }
 }
@@ -86,14 +97,14 @@
         }
 
         /* Background images for each item */
-        &:nth-child(1) { .program__name { background-image: url("../../resources/programs/programs\ \(5\).webp"); } }
-        &:nth-child(2) { .program__name { background-image: url("../../resources/programs/programs\ \(1\).webp"); } }
-        &:nth-child(3) { .program__name { background-image: url("../../resources/programs/programs\ \(6\).webp"); } }
-        &:nth-child(4) { .program__name { background-image: url("../../resources/programs/programs\ \(4\).webp"); } }
-        &:nth-child(5) { .program__name { background-image: url("../../resources/programs/programs\ \(8\).webp"); } }
-        &:nth-child(6) { .program__name { background-image: url("../../resources/programs/programs\ \(7\).webp"); } }
-        &:nth-child(7) { .program__name { background-image: url("../../resources/programs/programs\ \(3\).webp"); } }
-        &:nth-child(8) { .program__name { background-image: url("../../resources/programs/programs\ \(2\).webp"); } }
+        &:nth-child(1) { .program__name { background-image: url(".././resources/programs/programs\ \(5\).webp"); } }
+        &:nth-child(2) { .program__name { background-image: url(".././resources/programs/programs\ \(1\).webp"); } }
+        &:nth-child(3) { .program__name { background-image: url(".././resources/programs/programs\ \(6\).webp"); } }
+        &:nth-child(4) { .program__name { background-image: url(".././resources/programs/programs\ \(4\).webp"); } }
+        &:nth-child(5) { .program__name { background-image: url(".././resources/programs/programs\ \(8\).webp"); } }
+        &:nth-child(6) { .program__name { background-image: url(".././resources/programs/programs\ \(7\).webp"); } }
+        &:nth-child(7) { .program__name { background-image: url(".././resources/programs/programs\ \(3\).webp"); } }
+        &:nth-child(8) { .program__name { background-image: url(".././resources/programs/programs\ \(2\).webp"); } }
         // &:nth-child(9) { .program__name { background-image: url(".././resources/backgrounds/mesh-9.webp"); } }
 
         .font-small {

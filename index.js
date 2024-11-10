@@ -247,47 +247,47 @@ document.addEventListener('DOMContentLoaded', () => {
 // Testimonial data
 const testimonials = [
     {
-        id: 1,
-        name: 'John Doe',
-        designation: 'Software Engineer',
-        testimonial: 'This service has been a game changer for me. The team is professional and the results are outstanding.',
-        imageSrc: './resources/Testimonials/image-1.png'
-    },
-    {
-        id: 2,
-        name: 'Jane Smith',
-        designation: 'Product Manager',
-        testimonial: 'I have never been so impressed with a company’s dedication to customer success. Highly recommended!',
-        imageSrc: './resources/Testimonials/image-2.png'
-    },
-    {
         id: 3,
-        name: 'Michael Lee',
-        designation: 'UX Designer',
-        testimonial: 'Their attention to detail and passion for creating great products is truly remarkable.',
-        imageSrc: './resources/Testimonials/image-3.webp'
+        name: 'Nilesh Ranpura',
+        designation: 'Project Manager, eInfochips',
+        testimonial: 'We have been hiring students from your department as well as giving them Summer Internships in our organization. The quality of the students from Electronics and Communication Engineering of CHARUSAT University is outstanding and the one’s we have employed from campus recruitment are truly an asset to our organization.',
+        imageSrc: './resources/Testimonials/testimonial-3.webp'
     },
     {
         id: 4,
-        name: 'Emily Davis',
-        designation: 'Marketing Specialist',
-        testimonial: 'The team provided us with a top-notch solution. The process was smooth and the results exceeded expectations.',
-        imageSrc: './resources/Testimonials/image-4.webp'
+        name: 'Parthav Vyas',
+        designation: 'Director of Engineering, Scaledge Technology',
+        testimonial: 'We have observed that Charusat Changa\'s EC students receive exceptional motivation, guidance, and support from their dedicated faculty members, which is truly remarkable. As a student aspiring to build a successful career, it is crucial to choose an institute that values holistic development. In that regard, Charusat Changa stands out as an institute that prioritizes comprehensive growth.',
+        imageSrc: './resources/Testimonials/testimonial-4.webp'
     },
     {
         id: 5,
-        name: 'David Clark',
-        designation: 'CEO, Startup',
-        testimonial: 'Amazing results. Their work ethic and quality of output are unmatched.',
-        imageSrc: './resources/Testimonials/image-5.webp'
+        name: 'Ila Pokar',
+        designation: 'Parent',
+        testimonial: 'Charusat by providing various facilities to the students has proved that it is not only being study oriented university. The counselling batches assigned to the respective faculties has been an initiative that has helped the students at various points in their college life. Along with the platforms that it provides to enhance the co-curricular skills is pretty good.',
+        imageSrc: './resources/Testimonials/testimonial-5.webp'
     },
     {
-        id: 6,
-        name: 'Sophia White',
-        designation: 'Creative Director',
-        testimonial: 'We have been very pleased with the outcomes. The communication and service are simply brilliant.',
-        imageSrc: './resources/Testimonials/image-6.jpeg'
-    }
+        id: 1,
+        name: 'Aishwariya Biju',
+        designation: 'Student',
+        testimonial: 'The faculties are always enthusiastic to help us in all means. Here apart from polishing us for the being the part of industry they also arrange many technical and non-technical events as for the overall development of students.',
+        imageSrc: './resources/Testimonials/testimonial-2.webp'
+    },
+    {
+        id: 2,
+        name: 'Meet Shah',
+        designation: 'Student',
+        testimonial: 'CSPIT provides perfect platform for the students to scan, search and work over their ideas with the best support and guidance provided by the faculty members. Students are also acknowledged with all the upcoming technologies used and are also taught to use them which trains them for their challenging and bright future.',
+        imageSrc: './resources/Testimonials/testimonial-1.webp'
+    },
+    // {
+    //     id: 6,
+    //     name: 'Sophia White',
+    //     designation: 'Creative Director',
+    //     testimonial: 'We have been very pleased with the outcomes. The communication and service are simply brilliant.',
+    //     imageSrc: './resources/Testimonials/image-6.jpeg'
+    // }
 ];
 
 // Function to create a testimonial card
