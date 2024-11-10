@@ -107,7 +107,7 @@
         // &:nth-child(9) { .program__name { background-image: url(".././resources/backgrounds/mesh-9.webp"); } }
 
         .font-small {
-            font-size: responsive-font-size(1.5); // Reduced font size
+            font-size: responsive-font-size(1.5); // Reduced font size 
         }
 
         @media (max-width: 768px) {
