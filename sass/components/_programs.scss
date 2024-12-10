@@ -193,23 +193,28 @@
         padding: 3%; // Reduced padding
         padding-top: 0;
 
-        button {
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
             width: 100%;
             padding: 0.8rem 1rem; // Reduced padding
             border: none;
-            border-radius: 5px;
             color: $color-text-black;
             font-weight: 700;
             font-size: 1rem; // Reduced font size
-            border-radius: 1.5rem;
+            border-radius: 1rem;
             letter-spacing: -.5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
             font-family: "Inter", sans-serif;
-            // background-color: $color-head-icon-box-2;
+            background-color: $color-head-icon-box;
 
             &:hover {
-                background-color: lighten($color-theme-secondary, 30%);
+                // background-color: lighten($color-theme-secondary, 30%);
+                transform: translateY(-2px);
+                background-color: darken($color-head-icon-box, 10%);
+                box-shadow: 0 0 1rem -.5rem rgba(0, 0, 0, 0.2);
             }
         }
     }

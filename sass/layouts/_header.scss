@@ -163,6 +163,7 @@
             }
 
             &:hover, &:active, &:focus {
+                text-decoration: none;
                 background-color: rgba($color-theme-primary, 1);
                 color: $color-text-white !important;
             }
@@ -227,7 +228,15 @@
                     // padding: 8px 12px !important;
 
                     &:hover, &:active, &:focus{
+                        text-decoration: none;
                         background-color: $color-theme-secondary !important;
+                    }
+
+                    a, a:link, a:visited{           
+                        text-decoration: none;
+                        color: inherit;
+                        // display: block;
+                        // padding: 8px 12px;
                     }
 
                     &:not(:last-child){
